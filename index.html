@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/script.js"></script>
+
+    <title>Integrador HTML | CSS Comisión 22572</title>
+  </head>
+  <body class="grid-container">
+    <header class="header">
+      <a href="#" class="logo">
+        <img class="logo-img" src="img/codoacodo.png" alt="logo codo a codo" />
+        <h2 class="logo-txt">Conf Bs As</h2>
+      </a>
+      <ul class="nav">
+        <li><a href="#slider">La conferencia</a></li>
+        <li><a href="#speakers">Los oradores</a></li>
+        <li><a href="#place">El lugar y la fecha</a></li>
+        <li><a href="#become-speaker">Conviértete en orador</a></li>
+        <li>
+          <a href="javascript:void(0)"><span>Comprar tickets</span></a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="slider" id="slider">
+      <div class="slider-img">
+        <!-- <li><img src="img/ba1.jpg" alt="Conferencia 1" /></li>
+        <li><img src="img/ba2.jpg" alt="Conferencia 2" /></li>
+        <li><img src="img/ba3.jpg" alt="Conferencia 3" /></li> -->
+        <div class="slide slider-img1"></div>
+        <div class="slide slider-img2"></div>
+        <div class="slide slider-img3"></div>
+      </div>
+      <div class="slider-txt">
+        <h1>Conf Bs As</h1>
+        <p>
+          Bs As llega por primera vez a Argentina. Un evento para compartir con
+          nuestra comunidad el conocimiento y experiencia de los expertos que
+          están creando el futuro de internet. Ven a conocer a miembros del
+          evento, a otros estudiantes de Codo a Codo y los oradores de primer
+          nivel que tenemos para ti. Te esperamos!
+        </p>
+        <a href="#become-speaker" class="button">Quiero ser orador</a>
+        <a href="javascript:void(0)" class="button button-green"
+          >Comprar tickets</a
+        >
+      </div>
+    </section>
+
+    <section class="speakers" id="speakers">
+      <div class="title">
+        <h2 class="title-txt">CONOCE A LOS <span>ORADORES</span></h2>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-img">
+            <img src="img/steve.jpg" alt="Steve Jobs" />
+          </div>
+          <div class="card-btn">
+            <a href="javascript:void(0)" class="button button-yellow"
+              >JavaScript</a
+            >
+            <a href="javascript:void(0)" class="button button-lightblue"
+              >React</a
+            >
+          </div>
+          <div class="card-txt">
+            <h3>Steve Jobs</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae
+              dolor nemo qui laborum ipsam eaque quam id sit corrupti nam
+              sapiente, asperiores perferendis nihil adipisci in beatae
+              exercitationem ad?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/bill.jpg" alt="Bill Gates" />
+          </div>
+          <div class="card-btn">
+            <a href="javascript:void(0)" class="button button-yellow"
+              >JavaScript</a
+            >
+            <a href="javascript:void(0)" class="button button-lightblue"
+              >React</a
+            >
+          </div>
+          <div class="card-txt">
+            <h3>Bill Gates</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae
+              dolor nemo qui laborum ipsam eaque quam id sit corrupti nam
+              sapiente, asperiores perferendis nihil adipisci in beatae
+              exercitationem ad?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/ada.jpeg" alt="Ada Lovelace" />
+          </div>
+          <div class="card-btn">
+            <a href="javascript:void(0)" class="button button-gray">Negocios</a>
+            <a href="javascript:void(0)" class="button button-red">Startups</a>
+          </div>
+          <div class="card-txt">
+            <h3>Ada Lovelace</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae
+              dolor nemo qui laborum ipsam eaque quam id sit corrupti nam
+              sapiente, asperiores perferendis nihil adipisci in beatae
+              exercitationem ad?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="place" id="place">
+      <div class="place-container">
+        <div class="place-content place-content_img">
+          <div class="place-img">
+            <img src="img/honolulu.jpg" alt="honolulu" />
+          </div>
+        </div>
+        <div class="place-content place-content_txt">
+          <div class="place-txt">
+            <h2>Bs As - Octubre</h2>
+            <p>
+              Buenos Aires es la provincia y localidad más grande del estado de
+              Argentina, en los Estados Unidos. Honolulu es la más sureña de
+              entre las principales ciudades estadounidenses. Aunque el nombre
+              de Honolulu se refiere al área urbana en la costa sureste de la
+              isla de Oahu, la ciudad y el condado de Honolulu han formado una
+              ciudad-condado consolidada que cubre toda la
+              ciudad(aproximadamente 600 km<sup>2</sup> de superficie)
+            </p>
+            <a href="javascript:void(0)" class="button button-more"
+              >Conocé más</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="become-speaker" id="become-speaker">
+      <div class="form-container">
+        <div class="title">
+          <h2 class="title-txt">CONVIÉRTETE EN UN <span>ORADOR</span></h2>
+          <p class="form-txt">
+            Anótate como orador para dar una <span>charla ignite</span>.
+            Cuéntanos de qué quieres hablar!
+          </p>
+        </div>
+        <form class="contact-form">
+          <div class="contact-form-input">
+            <div class="contact-form-content">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="contact-form-content">
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                required
+                placeholder="Apellido"
+              />
+            </div>
+            <div class="contact-form-content">
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                required
+                placeholder="Sobre qué quieres hablar?"
+              ></textarea>
+            </div>
+          </div>
+          <p>Recuerda incluir un título para tu charla</p>
+          <div class="contact-form-content">
+            <button
+              type="submit"
+              class="button contact-form-button"
+              onclick="stopDefaultAction(event)"
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <nav class="footer-nav">
+        <p>
+          <a href="">Preguntas<br />frecuentes </a>
+        </p>
+        <p><a href="">Contáctanos</a></p>
+        <p><a href="">Prensa</a></p>
+        <p><a href="">Conferencias</a></p>
+        <p>
+          <a href="">Términos y <br />condiciones </a>
+        </p>
+        <p><a href="">Privacidad</a></p>
+        <p><a href="">Estudiantes</a></p>
+      </nav>
+    </footer>
+  </body>
+</html>
