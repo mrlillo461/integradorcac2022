@@ -8,6 +8,14 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", scrollY > 0);
 });
 
+let btnTickets = document.querySelector(".btn-tickets");
+let buyTickets = document.querySelector(".buy-tickets");
+
+btnTickets.addEventListener("click", function () {
+  console.log(buyTickets);
+  buyTickets.classList.add("open-buy-tickets");
+});
+
 // function stopDefaultAction(event) {
 //   event.preventDefault();
 // }

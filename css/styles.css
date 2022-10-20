@@ -509,6 +509,25 @@ body {
   border: 1px solid #96c93e;
 }
 
+.buy-tickets {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(108, 117, 125, 0.8);
+  display: grid;
+  place-items: center;
+  transition: 0.3s;
+  visibility: hidden;
+  z-index: -100;
+}
+
+.open-buy-tickets {
+  visibility: visible;
+  z-index: 100;
+}
+
 .footer {
   grid-area: footer;
   background-color: #1e516e;
