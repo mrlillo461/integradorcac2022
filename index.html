@@ -27,7 +27,7 @@
         <li><a href="#become-speaker">Conviértete en orador</a></li>
         <li>
           <a href="javascript:void(0)">
-            <span class="btn-tickets">Comprar tickets</span>
+            <span class="button-tickets">Comprar tickets</span>
           </a>
         </li>
       </ul>
@@ -188,7 +188,7 @@
               <textarea
                 name="message"
                 id="message"
-                rows="4"
+                rows="6"
                 required
                 placeholder="Sobre qué quieres hablar?"
               ></textarea>
@@ -232,10 +232,75 @@
         </section>
         <section class="form-container">
           <div class="form-title">
-            <p class="">Venta</p>
-            <h2>VALOR DE TICKET $200</h2>
+            <p class="form-title-paragraph">Venta</p>
+            <h2 class="form-title-value">VALOR DE TICKET $200</h2>
           </div>
-          <form class="sale-form"></form>
+          <form class="contact-form">
+            <div class="contact-form-input">
+              <div class="contact-form-content">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="contact-form-content">
+                <input
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  required
+                  placeholder="Apellido"
+                />
+              </div>
+              <div class="contact-form-content">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Correo"
+                />
+              </div>
+              <div class="contact-form-content">
+                <input
+                  type="text"
+                  name="amount"
+                  id="amount"
+                  required
+                  placeholder="Cantidad"
+                />
+              </div>
+              <div class="contact-form-content">
+                <select name="category" class="category">
+                  <option selected>Categoría</option>
+                  <option value="1">Estudiante</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
+                </select>
+              </div>
+            </div>
+            <div class="contact-form-content">
+              <div class="total-container">
+                <p class="total-pay">Total a pagar: $</p>
+                <span class="total">300</span>
+              </div>
+            </div>
+            <div class="contact-form-content">
+              <button type="reset" class="button contact-form-button">
+                Borrar
+              </button>
+              <button
+                type="submit"
+                class="button contact-form-button"
+                onclick="stopDefaultAction(event)"
+              >
+                Resumen
+              </button>
+            </div>
+          </form>
         </section>
       </div>
     </section>

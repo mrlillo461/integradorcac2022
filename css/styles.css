@@ -466,7 +466,7 @@ body {
   text-decoration: underline dotted;
 }
 
-/* .contact-form, */
+.contact-form,
 .contact-form-input {
   display: grid;
   gap: 20px;
@@ -477,10 +477,11 @@ body {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
   border-radius: 5px;
   border: 1px solid #6c757d;
-  height: 30px;
+  height: 35px;
   padding: 5px 10px;
 }
 
@@ -513,20 +514,32 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 100px;
   background: rgba(108, 117, 125, 0.8);
   display: grid;
   place-items: center;
-  transition: 0.3s;
-  visibility: hidden;
-  z-index: -100;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+
+.buy-tickets.scroll {
+  margin-top: 80px;
 }
 
 .open-buy-tickets {
-  visibility: visible;
-  z-index: 100;
+  transform: scale(1);
 }
+
+.buy-tickets-container {
+  background-color: #fff;
+}
+
+/* option[selected],
+.disabled {
+  color: #6c757d;
+} */
 
 .footer {
   grid-area: footer;
